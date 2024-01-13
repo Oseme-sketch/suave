@@ -1,10 +1,9 @@
 import "./App.css";
-import { Page } from "./stories/Page";
 
 function App() {
   return (
     <>
-      <Page />
+      <h1 className="text-rose-700">Welcome to Suave!</h1>
     </>
   );
 }
