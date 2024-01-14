@@ -1,9 +1,23 @@
 import "./App.css";
+import TextArray from "./components/text-array/TextArray";
 
 function App() {
   return (
     <>
-      <h1 className="text-rose-700">Welcome to Suave!</h1>
+      <TextArray
+        textList={[
+          "Hello World 1",
+          "Hi",
+          "Hello World 3",
+          "Hello World !!",
+          "Hello",
+          "Hello World 6",
+          "Hello World 7",
+        ]}
+        displayState="ROTATING"
+        baseColorMode="COMPLEMENTARY"
+        textColor="#7c2d12"
+      />
     </>
   );
 }
