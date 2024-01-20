@@ -10,6 +10,14 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    docs: {
+      toc: {
+        contentsSelector: ".sbdocs-content",
+        headingSelector: "h1, h2, h3",
+        title: "Table of Contents",
+        disable: false,
+      },
+    },
   },
 };
 

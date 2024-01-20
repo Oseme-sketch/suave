@@ -2,14 +2,41 @@ import { useEffect, useRef } from "react";
 import getComplementaryColor from "./color";
 
 export interface TextArrayProps {
+  /**
+   *  Array of texts to be displayed.
+   *  
+   *  numOfChars <= (63 - 2 * numOfTexts)
+   */
   textList?: string[];
+  /**
+   *  Color of texts to be displayed.
+   * 
+   *  Currently, only "RGB Hexadecimal" is supported.
+   */
   textColor?: string;
+  /**
+   *  Color scheme for the base.
+   * 
+   *  @todo Implement "CUSTOM" color mode
+   */
   baseColorMode?: "COMPLEMENTARY" | "IDENTICAL";
+  /**
+   *  Size of component to be displayed.
+   */
   displaySize?: "SMALL" | "MEDIUM" | "LARGE";
+  /**
+   *  Angular position of the first character.
+   */
   startAngle?: number;
+  /**
+   *  State of the component.
+   */
   displayState?: "STATIC" | "ROTATING";
 }
 
+/**
+ * This component displays a number of texts around a base
+ */
 function TextArray({
   textList = ["This is the default text!"],
   textColor = "#3b82f6",
