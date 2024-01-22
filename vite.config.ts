@@ -8,8 +8,8 @@ export default defineConfig({
     copyPublicDir: false,
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
-      name: "Suave",
-      fileName: "suave",
+      name: "SuaveUI",
+      fileName: "suave-ui",
     },
     rollupOptions: {
       external: ["react", "react-dom"],
