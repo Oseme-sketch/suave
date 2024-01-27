@@ -18,7 +18,7 @@ npm install suave-ui
 ## Usage
 
 ```
-import { TextArray } from "suave";
+import { TextArray } from "suave-ui";
 
 function App() {
   return (
